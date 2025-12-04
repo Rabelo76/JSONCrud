@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração</title>
+    <link rel="stylesheet" href="administracao.css">
+</head>
+<body>
+    <center>
+        <h2>
+            <a href="Login.html">Login</a>
+            <a href="cadastro.html">Cadastro</a>
+        </h2>
+    </center>
+
+    <center>
+        <h1>Atualizar Pessoa</h1>
+        <form onsubmit="return false;">
+            <label>ID:</label>
+            <input type="text" id="identificador" disabled>
+            <br><br>
+
+            <label>CPF:</label>
+            <input type="text" id="identificadorCPF">
+            <br><br>
+
+            <label>Nome:</label>
+            <input type="text" id="nomeAtualizar">
+            <br><br>
+
+            <label>Sobrenome:</label>
+            <input type="text" id="sobrenomeAtualizar">
+            <br><br>
+
+            <label>Email:</label>
+            <input type="text" id="emailAtualizar">
+            <br><br>
+
+            <label>Senha:</label>
+            <input type="password" id="senhaAtualizar">
+            <br><br>
+
+            <label>Rua:</label>
+            <input type="text" id="ruaAtualizar">
+            <br><br>
+
+            <label>CEP:</label>
+            <input type="number" id="cepAtualizar">
+            <br><br>
+
+            <label>Cidade:</label>
+            <input type="text" id="cidadeAtualizar">
+            <br><br>
+
+            <label>Estado:</label>
+            <input type="text" id="estadoAtualizar">
+            <br><br>
+
+            <label>Telefone:</label>
+            <input type="number" id="telefoneAtualizar">
+            <br><br>
+
+            <button type="button" onclick="buscarDados()">Buscar</button>
+            <button type="button" onclick="atualizarDados()">Atualizar</button>
+        </form>
+    </center>
+
+    <hr>
+
+    <center>
+        <h1>Lista de Cadastrados</h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>Sobrenome</td>
+                    <td>CPF</td>
+                    <td>Email</td>
+                    <td>Senha</td>
+                    <td>Rua</td>
+                    <td>CEP</td>
+                    <td>Cidade</td>
+                    <td>Estado</td>
+                    <td>Telefone</td>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo"></tbody>
+        </table>
+    </center>
+
+    <hr>
+
+    <center>
+        <h1>Deletar Pessoa</h1>
+        <form onsubmit="return false;">
+            <label>CPF:</label>
+            <input type="text" id="cpfDeletar">
+            <input type="button" value="Deletar" onclick="deletarDados()">
+        </form>
+    </center>
+
+    <script src="administracao.js"></script>
+
+</body>
+</html>
