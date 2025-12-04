@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+
+fieldset {
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    align-items: center;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 60px;
+    align-items: center;
+}
+
+body {
+    background-color: yellow;
+}
+
+button {
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: lightgreen;
+}
+
+input {
+    border-radius: 10px;
+    background-color: lightgrey;
+    align-items: center;
+}
+
+input:hover{
+    background-color: white;
+}
