@@ -1,0 +1,21 @@
+body {
+    color: black;
+    background-color: yellow;
+    text-align: center;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    text-align: left;
+}
